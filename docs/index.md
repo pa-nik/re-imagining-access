@@ -61,7 +61,7 @@ choco install ffmpeg
 
 ### Virtual Environment Setup
 
-Prior to proceeding with the installation of necessary Python libraries, we recommend setting up a virtual environment that will contain project dependencies.  To learn more about Python virtual environments, visit (https://realpython.com/python-virtual-environments-a-primer/)[https://realpython.com/python-virtual-environments-a-primer/]
+Prior to proceeding with the installation of necessary Python libraries, we recommend setting up a virtual environment that will contain project dependencies.  To learn more about Python virtual environments, visit [www.realpython.com/python-virtual-environments-a-primer/](https://realpython.com/python-virtual-environments-a-primer/)
 
 To set up a virtual environment within the current project directory and activate it, type the following on the command line:
 
