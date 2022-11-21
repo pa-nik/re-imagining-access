@@ -30,15 +30,13 @@ Each of these systems offers a full-featured archival and digital preservation s
 
 [TODO: summary of Archivematica as a collection of microservices]
 
-## ASR Microservice
-
 [TODO: explanation of how auto-transcription could work within Archivematica workflow]
 
-## Whisper ASR Demonstration
+## Whisper ASR Demo
 
 [TODO: explanation of the standalone Whisper demo]
 
-### Whisper Installation Requirements ###
+### Installation Requirements
 
 Whisper requires Python version 3.7 or above.  Most computers come with Python pre-installed.  To check the version installed on your computer, open the command line (Terminal application on MacOS or Linux, Terminal or PowerShell on Windows) and type:
 
@@ -60,3 +58,21 @@ brew install ffmpeg
 # Windows
 choco install ffmpeg
 ```
+
+### Virtual Environment Setup
+
+Prior to proceeding with the installation of necessary Python libraries, we recommend setting up a virtual environment that will contain project dependencies.  To learn more about Python virtual environments, visit (https://realpython.com/python-virtual-environments-a-primer/)[https://realpython.com/python-virtual-environments-a-primer/]
+
+To set up a virtual environment within the current project directory and activate it, type the following on the command line:
+
+```
+python -m venv venv
+
+# MacOS or Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+
+If setup was successful, the command line prompt should now display the name of the virtual environment in parentheses - in this case `(venv)`  
