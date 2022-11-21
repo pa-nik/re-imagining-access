@@ -1,5 +1,3 @@
-# Re-Imagining Access
-
 ## Introduction
 
 This page documents the process of installing and testing an audio transcription demonstration application based on the open-source automatic speech recognition (ASR) system called [Whisper](https://openai.com/blog/whisper/), released on September 21, 2022 by OpenAI.  
@@ -13,3 +11,52 @@ The effort to research and investigate an easy to deploy practical ASR applicati
 During the summer of 2021, students from the studio course instructed by Elise Co, Robert Dirig, Josh Halstead, & Todd Masilko proposed the "Double Check" prototype concept as part of an answer to a question: "How might we design an archive system that ensures accessibility from beginning to end?"  The term accessibility in this context refers to the need to make archive resources designed for individuals with disabilities in mind.
 
 The students identified a list of potential use cases and corresponding capability requirements, rated according to their priority for the accessibility checker prototype concept.  Automatic transcription of archived audio and video files was identified as one high priority item on this list.  This accessibility feature was subsequently chosen as a focus of an investigation into a potential functional solution that could in principle be integrated as a feature of the archival systems employed by ArtCenter and other institutions.
+
+## Audience
+
+The primary purpose of this document is to provide some context and to outline the practical instructions for how to deploy a sample ASR application, which may be of interest to anyone engaged with archival systems or simply looking for a resource to walk through the process step by step.
+
+There are many other online resources and tutorials covering the specifics of software installation, typically written by and for programmers.  While we also assume a certain level of technical familiarity with software development, such as  the use of command line tools, an attempt is made to provide some of the more basic instructions and contextual explanations that may be helpful for a non-programmer audience.
+
+## Archival Software
+
+As a starting point in identifying the technical platform for a functional feature demonstration we surveyed three popular archival software systems: [Archivematica](https://archivematica.org/), [ArchivesSpace](https://archivesspace.org/), and [Preservica](https://preservica.com/).
+
+Each of these systems offers a full-featured archival and digital preservation solution, used by major institutions and organizations around the world.  As with all technical systems, there are significant differences in approach inherent in each solution, summarized briefly below.
+
+[TODO: summary of archival software options]
+
+## Archivematica Architecture
+
+[TODO: summary of Archivematica as a collection of microservices]
+
+## ASR Microservice
+
+[TODO: explanation of how auto-transcription could work within Archivematica workflow]
+
+## Whisper ASR Demonstration
+
+[TODO: explanation of the standalone Whisper demo]
+
+### Whisper Installation Requirements ###
+
+Whisper requires Python version 3.7 or above.  Most computers come with Python pre-installed.  To check the version installed on your computer, open the command line (Terminal application on MacOS or Linux, Terminal or PowerShell on Windows) and type:
+
+```
+python --version
+```
+
+If needed, Python installation can be upgraded using the official installer from [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+Whisper also requires the audio-processing library [ffmpeg](https://ffmpeg.org/).  In order to install it on the command line, run the command appropriate for your operating system:
+
+```
+# Linux
+sudo apt update && sudo apt install ffmpeg
+
+# MacOS
+brew install ffmpeg
+
+# Windows
+choco install ffmpeg
+```
