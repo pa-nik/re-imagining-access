@@ -76,3 +76,15 @@ venv\Scripts\activate
 ```
 
 If setup was successful, the command line prompt should now display the name of the virtual environment in parentheses - in this case `(venv)`  
+
+### Rust installation
+
+The (Rust)[https://www.rust-lang.org/learn/get-started] development environment may need to be available on some systems prior to Whisper installation.
+
+```
+# MacOS
+brew install rust
+
+# other Operating Systems
+# https://forge.rust-lang.org/infra/other-installation-methods.html
+```
