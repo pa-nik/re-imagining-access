@@ -20,11 +20,18 @@ There are many other online resources and tutorials covering the specifics of so
 
 ## Archival Software
 
-As a starting point in identifying the technical platform for a functional feature demonstration we surveyed three popular archival software systems: [Archivematica](https://archivematica.org/), [ArchivesSpace](https://archivesspace.org/), and [Preservica](https://preservica.com/).
+As a starting point in identifying the technical platform for a functional feature demonstration we surveyed three popular archival software systems: [Archivematica](https://archivematica.org/), ArchivesSpace, and [Preservica](https://preservica.com/).
 
-Each of these systems offers a full-featured archival and digital preservation solution, used by major institutions and organizations around the world.  As with all technical systems, there are significant differences in approach inherent in each solution, summarized briefly below.
+Each of these systems offers a full-featured archival and digital preservation solution, used by major institutions and organizations around the world.  As with all technical systems, there are significant differences in approach inherent in each solution, summarized briefly below.  Our focus in reviewing archival software was on the underlying tools and frameworks used in their development, with an eye towards choosing a platform to facilitate integration of a functional ASR demo.
 
-[TODO: summary of archival software options]
+### ArchivesSpace
+
+[ArchivesSpace](https://archivesspace.org/) is described as an open source web application for managing archives information that supports "collection management records, tracking of events, and a growing number of  administrative reports.  The application also functions as a metadata authoring tool, enabling the generation of EAD, MARCXML, MODS, Dublin Core, and METS formatted data."   
+
+The first version of ArchivesSpace was released in September 2013, with support from the Andrew W. Mellon Foundation and collaboration between New York University, the University of Illinois Urbana-Champaign and the University of California San Diego.  The application is developed in the Java programming language and has been tested on Linux, Mac OS X, and Windows operating systems.
+
+[ArchivesSpace repository](https://github.com/archivesspace/archivesspace) on Github shows that it is an actively developed project at the time of this writing.  Additional documentation and overview of the application are available at [archivesspace.atlassian.net](https://archivesspace.atlassian.net/wiki/spaces/ADC/overview).  Developer API for the latest version of ArchivesSpace is documented on [ArchivesSpace Github Pages](https://archivesspace.github.io/archivesspace/api).
+
 
 ## Archivematica Architecture
 
