@@ -20,9 +20,17 @@ There are many other online resources and tutorials covering the specifics of so
 
 ## Archival Software
 
-As a starting point in identifying the technical platform for a functional feature demonstration we surveyed three popular archival software systems: [Archivematica](https://archivematica.org/), ArchivesSpace, and [Preservica](https://preservica.com/).
+As a starting point in identifying the technical platform for a functional feature demonstration we surveyed three popular archival software systems: Archivematica, ArchivesSpace, and [Preservica](https://preservica.com/).
 
 Each of these systems offers a full-featured archival and digital preservation solution, used by major institutions and organizations around the world.  As with all technical systems, there are significant differences in approach inherent in each solution, summarized briefly below.  Our focus in reviewing archival software was on the underlying tools and frameworks used in their development, with an eye towards choosing a platform to facilitate integration of a functional ASR demo.
+
+### Archivematica
+
+[Archivematica](https://archivematica.org/) is a digital preservation system developed by the Canadian-based company [Artefactual Systems](https://www.artefactual.com/) as a "web- and standards-based, open-source application which allows your institution to preserve long-term access to trustworthy, authentic and reliable digital content."   
+
+Archivematica uses a [micro-services](http://en.wikipedia.org/wiki/Microservices) architecture to provide an integrated suite of software tools that allows users to process digital objects from ingest to access in compliance with the [Open Archival Information System (OAIS)](http://www.oais.info/) Reference Model. The application is developed using the Python programming language and built upon the [Django](https://www.djangoproject.com/) web framework, as well as many other open-source Python frameworks and libraries.
+
+The application was initially released as an alpha version in February 2009.  [Archivematica repository](https://github.com/artefactual/archivematica) shows that at the time of this writing, the latest code update to the stable/current version of the application (v1.13.2) was committed on December 12, 2021.  Additional [Archivematica documentation](https://www.archivematica.org/en/docs/archivematica-1.13/) and overview of the [Archivematica API](https://www.archivematica.org/en/docs/archivematica-1.13/dev-manual/api/api-overview) for developers are available on the project website. 
 
 ### ArchivesSpace
 
@@ -30,7 +38,7 @@ Each of these systems offers a full-featured archival and digital preservation s
 
 The first version of ArchivesSpace was released in September 2013, with support from the Andrew W. Mellon Foundation and collaboration between New York University, the University of Illinois Urbana-Champaign and the University of California San Diego.  The application is developed in the Java programming language and has been tested on Linux, Mac OS X, and Windows operating systems.
 
-[ArchivesSpace repository](https://github.com/archivesspace/archivesspace) on Github shows that it is an actively developed project at the time of this writing.  Additional documentation and overview of the application are available at [archivesspace.atlassian.net](https://archivesspace.atlassian.net/wiki/spaces/ADC/overview).  Developer API for the latest version of ArchivesSpace is documented on [ArchivesSpace Github Pages](https://archivesspace.github.io/archivesspace/api).
+[ArchivesSpace repository](https://github.com/archivesspace/archivesspace) on Github shows that it is an actively developed project (at the time of this writing the latest code update was committed on November 22, 2022).  Additional documentation and overview of the application are available at [archivesspace.atlassian.net](https://archivesspace.atlassian.net/wiki/spaces/ADC/overview).  Developer API for the latest version of ArchivesSpace is documented on [ArchivesSpace Github Pages](https://archivesspace.github.io/archivesspace/api).
 
 
 ## Archivematica Architecture
