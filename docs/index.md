@@ -114,7 +114,7 @@ If setup was successful, the command line prompt should now display the name of 
 
 ### Rust installation
 
-The [Rust](https://www.rust-lang.org/learn/get-started) development environment may need to be available on some systems prior to Whisper installation.
+The [Rust](https://www.rust-lang.org/learn/get-started) development environment may need to be available on some systems prior to Whisper installation.  In our testing, Rust was needed for MacOS, but not Windows.
 
 ```
 # MacOS
@@ -132,8 +132,8 @@ After all the preparatory steps, the Whisper library can be installed with just 
 python -m pip install git+https://github.com/openai/whisper.git
 ```
 
-At this point, it should be possible to test Whisper transcription capabilities on the command line with an audio file, such as the 1-minute clip from Keith Haring's lecture included in this repository.  The command below specifies the medium-size Whisper model to be used for transcription:
+At this point, it should be possible to test Whisper transcription capabilities on the command line with an audio file, such as the 1-minute clip from Keith Haring's lecture included in this repository.  The command below specifies the medium-size Whisper model to be used for transcription with the (optional) `--model` flag:
 
 ```
-whisper haring_1min.wav --model medium
+whisper haring_1min.mp3 --model medium
 ```
