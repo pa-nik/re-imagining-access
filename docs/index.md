@@ -22,7 +22,7 @@ There are many other online resources and tutorials covering the specifics of so
 
 As a starting point in identifying the technical platform for a functional feature demonstration we surveyed three popular archival software systems: Archivematica, ArchivesSpace, and [Preservica](https://preservica.com/).
 
-Each of these systems offers a full-featured archival and digital preservation solution, used by major institutions and organizations around the world.  As with all technical systems, there are significant differences in approach inherent in each solution, summarized briefly below.  Our focus in reviewing archival software was on the underlying tools and frameworks used in their development, with an eye towards choosing a platform to facilitate integration of a functional ASR demo.
+Each of these systems offers a full-featured archival and digital preservation solution, used by major institutions and organizations around the world.  As with all technical systems, there are significant differences in approach inherent in each solution, summarized briefly below.  Our focus in reviewing archival software was on the underlying tools and frameworks used in their development, with an eye towards choosing a platform to facilitate the integration of a functional ASR demo.
 
 ### Archivematica
 
@@ -30,7 +30,7 @@ Each of these systems offers a full-featured archival and digital preservation s
 
 Archivematica uses a [micro-services](http://en.wikipedia.org/wiki/Microservices) architecture to provide an integrated suite of software tools that allows users to process digital objects from ingest to access in compliance with the [Open Archival Information System (OAIS)](http://www.oais.info/) Reference Model. The application is developed using the Python programming language and built upon the [Django](https://www.djangoproject.com/) web framework, as well as many other open-source Python frameworks and libraries.
 
-The application was initially released as an alpha version in February 2009.  [Archivematica repository](https://github.com/artefactual/archivematica) shows that at the time of this writing, the latest code update to the stable/current version of the application (v1.13.2) was committed on December 12, 2021.  Additional [Archivematica documentation](https://www.archivematica.org/en/docs/archivematica-1.13/) and overview of the [Archivematica API](https://www.archivematica.org/en/docs/archivematica-1.13/dev-manual/api/api-overview) for developers are available on the project website. 
+The application was initially released as an alpha version in February 2009.  [Archivematica repository](https://github.com/artefactual/archivematica) shows that at the time of this writing, the latest code update to the stable/current version of the application (v1.13.2) was committed on December 12, 2021.  Additional [Archivematica documentation](https://www.archivematica.org/en/docs/archivematica-1.13/) and overview of the [Archivematica API](https://www.archivematica.org/en/docs/archivematica-1.13/dev-manual/api/api-overview) for developers are available on the project website.
 
 ### ArchivesSpace
 
@@ -53,13 +53,33 @@ The first version of ArchivesSpace was released in September 2013, with support 
 
 ### Installation Requirements
 
-Whisper requires Python version 3.7 or above.  Most computers come with Python pre-installed.  To check the version installed on your computer, open the command line (Terminal application on MacOS or Linux, Terminal or PowerShell on Windows) and type:
+As with many contemporary open-source projects, installation of the Whisper ASR demo application requires the use of the Git version control system and the command line (Terminal application on MacOS or Linux, Terminal or PowerShell on Windows).  
+
+As the first step, [download Git](https://git-scm.com/downloads) for your OS and run the installer. The GitHub [Install Git](https://github.com/git-guides/install-git) guide outlines the instructions for major operating systems.  To verify that the command line tool is properly configured, open the terminal and enter the following command:
+
+```
+git version
+```
+
+In addition to Git, the command line package manager tools are recommended on operating systems other than Linux.  For Windows, follow the installation instructions for the [Chocolatey](https://chocolatey.org/install) package manager.  For MacOS, install [Homebrew](https://brew.sh/).  
+
+To check that the package manager installed successfully on your system, open the terminal and type the command appropriate for your OS (under # comment):
+
+```
+# MacOS
+brew --version
+
+# Windows
+choco --version
+```
+
+Whisper is written in the Python programming language and requires a Python interpreter version 3.7 or above.  Most computers come with Python pre-installed.  To check the version installed on your computer, type:
 
 ```
 python --version
 ```
 
-If needed, Python installation can be upgraded using the official installer from [https://www.python.org/downloads/](https://www.python.org/downloads/)
+If needed, Python can be installed or upgraded using the official installer from [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 Whisper also requires the audio-processing library [ffmpeg](https://ffmpeg.org/).  In order to install it on the command line, run the command appropriate for your operating system:
 
