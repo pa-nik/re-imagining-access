@@ -140,7 +140,7 @@ whisper audio/haring_1min.mp3 --model small
 
 ### Whisper in a Python program
 
-To use Whisper as a library within a Python program, 4 lines of code are sufficient:  
+To use Whisper as a library within a standalone Python program, 4 lines of code are sufficient:  
 
 ```
 import whisper
@@ -153,3 +153,25 @@ print(result["text"])
 The sample program above is included in this repository as `whisper_test.py` and can be run with:
 
 `python whisper_test.py`
+
+### Whisper GUI
+
+To provide a more user-friendly demo, we considered the options for including a Graphical User Interface on top of the Python application.  [Whisper-WebUI](https://huggingface.co/spaces/aadnk/whisper-webui) is one good example of a web application featuring an easy-to-use GUI for Whisper, built with the [Gradio](https://gradio.app/) library and deployed on HuggingFace Spaces.
+
+To create a version of Whisper-WebUI running locally, clone the repository and run a command to install the required libraries:  
+
+```
+git clone https://huggingface.co/spaces/aadnk/whisper-webui
+cd whisper-webui
+python -m pip install -r requirements.txt
+```  
+
+Next, run the `app-local.py` file with Python to launch the application:   
+
+```
+python app-local.py
+```
+
+If successful, the application will start a web server that can be accessed via any browser at [http://127.0.0.1:7860](http://127.0.0.1:7860).  The local version of the application has the same functionality as the online version, while being accessible without a network connection and able to handle lengthy audio files as input.
+
+[TODO: Explanation of potential next steps for the project]
