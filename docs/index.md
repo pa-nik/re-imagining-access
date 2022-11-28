@@ -123,3 +123,17 @@ brew install rust
 # other Operating Systems
 # [https://forge.rust-lang.org/infra/other-installation-methods.html](https://forge.rust-lang.org/infra/other-installation-methods.html)
 ```
+
+### Whisper installation
+
+After all the preparatory steps, the Whisper library can be installed with just one command:   
+
+```
+python -m pip install git+https://github.com/openai/whisper.git
+```
+
+At this point, it should be possible to test Whisper transcription capabilities on the command line with an audio file, such as the 1-minute clip from Keith Haring's lecture included in this repository.  The command below specifies the medium-size Whisper model to be used for transcription:
+
+```
+whisper haring_1min.wav --model medium
+```
