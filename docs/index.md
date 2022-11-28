@@ -132,8 +132,24 @@ After all the preparatory steps, the Whisper library can be installed with just 
 python -m pip install git+https://github.com/openai/whisper.git
 ```
 
-At this point, it should be possible to test Whisper transcription capabilities on the command line with an audio file, such as the 1-minute clip from Keith Haring's lecture included in this repository.  The command below specifies the medium-size Whisper model to be used for transcription with the (optional) `--model` flag:
+At this point, it should be possible to test Whisper transcription capabilities on the command line with an audio file, such as the 1-minute clip from Keith Haring's lecture included in this repository.  The command below specifies the specific Whisper model to be used for transcription with the (optional) `--model` flag:
 
 ```
-whisper haring_1min.mp3 --model medium
+whisper audio/haring_1min.mp3 --model small
 ```
+
+### Whisper in a Python program
+
+To use Whisper as a library within a Python program, 4 lines of code are sufficient:  
+
+```
+import whisper
+
+model = whisper.load_model("small")
+result = model.transcribe("audio/haring_1min.mp3")
+print(result["text"])
+```
+
+The sample program above is included in this repository as `whisper_test.py` and can be run with:
+
+`python whisper_test.py`
